@@ -1,0 +1,191 @@
+@font-face {
+	font-family:'Gilroy-SemiBold'; 
+	src: url(../../assets/fonts/Gilroy-SemiBold.ttf); 
+}
+@font-face {
+	font-family:'Gilroy-Medium'; 
+	src: url(../../assets/fonts/Gilroy-Medium.ttf); 
+}
+
+*{
+    font-size: 16px;
+    line-height: 19px; 
+}
+
+.LeftMenu::-webkit-scrollbar {
+    width: 0;
+    height: 0;
+}
+
+body {
+    margin: 0; 
+   }
+
+.LeftMenu{
+    display: flex;
+    flex-direction: column;
+position: absolute;
+width: 260px;
+height: 100vh;
+left: 500px;
+top: 100px;
+background: #FFFFFF;
+box-shadow: inset -1px 0px 0px #DFE5F1;
+border: 1px solid black;
+overflow: auto;
+-ms-overflow-style: none;
+scrollbar-width: none;
+}
+.MenuConteiner{
+    width: 260px;
+    height: 566px;
+    position: absolute;
+    top: 218px;
+}
+.ExitMenu{
+    position: absolute;
+    top: 802px;
+}
+
+.Line{
+position: absolute;
+width: 200px;
+height: 0px;
+left: 30px;
+top: 175px;
+border-bottom: 1px solid #DFE5F1;
+height: 1px;
+width: 200px;
+}
+
+
+.DashboardConteiner{
+position: absolute;
+width: 125px;
+height: 24px;
+left: 30px;
+top: 215px;
+}
+.DashboardLogo{
+    background: url(../../assets/Icons/flash-circle.png) no-repeat;
+    position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+}
+.DashboardText{
+    position: absolute;
+    width: 83px;
+    height: 19px;
+    left: 40px;
+    top: 3px; 
+    font-family: 'Gilroy-Medium';
+    color: #141736;
+    cursor: pointer;   
+}
+.MyScheduleConteiner{
+position: absolute;
+width: 125px;
+height: 24px;
+left: 30px;
+top: 269px;
+}
+.MyScheduleLogo{
+background: url(../../assets/Icons/message-text.png);
+ position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+}
+.MyScheduleText{
+    position: absolute;
+    width: 94px;
+    height: 19px;
+    left: 40px;
+    top: 3px;
+    font-family: 'Gilroy-Medium';
+    color: #141736; 
+    cursor: pointer;
+}
+.MyCourseConteiner{
+    position: absolute;
+    width: 125px;
+    height: 24px;
+    left: 30px;
+    top: 323px;
+}
+.MyCourseLogo{
+    background: url(../../assets/Icons/teacher.png);
+    position: absolute;
+   width: 24px;
+   height: 24px;
+   left: 0px;
+   top: 0px;
+}
+.MyCourseText{
+    position: absolute;
+    width: 77px;
+    height: 19px;
+    left: 40px;
+    top: 3px;
+    font-family: 'Gilroy-Medium';
+    font-size: 16px;
+    line-height: 19px;
+    color: #141736; 
+    cursor: pointer;
+}
+.MyAccountConteiner{
+    position: absolute;
+    width: 125px;
+    height: 24px;
+    left: 30px;
+    top: 377px;
+}
+.MyAccountLogo{
+  background: url(../../assets/Icons/flash-circle.png) no-repeat;
+ position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+}
+.MyAccountText{
+    position: absolute;
+    width: 87px;
+    height: 19px;
+    left: 40px;
+    top: 3px; 
+    font-family: 'Gilroy-Medium';
+    color: #141736;
+    cursor: pointer;
+}
+.LogoutConteiner{
+    position: absolute;
+width: 125px;
+height: 24px;
+left: 30px;
+top: 799px;
+}
+.LogoutLogo{
+    background: url(../../assets/Icons/login.png) no-repeat;
+ position: absolute;
+width: 24px;
+height: 24px;
+left: 0px;
+top: 0px;
+}
+.LogoutText{
+position: absolute;
+width: 70px;
+height: 19px;
+left: 35px;
+top: 3px;
+text-align: center;
+font-family: 'Gilroy-Medium';
+color: #141736;
+background:none;
+cursor: pointer;
+}
+

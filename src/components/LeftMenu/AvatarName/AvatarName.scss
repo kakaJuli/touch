@@ -1,0 +1,23 @@
+.AvatarName{
+
+
+
+    &-Image{
+        position: absolute;
+        width: 34px;
+        height: 34px;
+        left: 30px;
+        top: 113px;
+        border-radius: 201.875px;
+    }
+    &-Text{
+        position: absolute;
+        width: 98px;
+        height: 20px;
+        left: 74px;
+        top: 113px;
+        font-family: 'Gilroy-SemiBold';
+        color: #000000;
+    }
+
+}
