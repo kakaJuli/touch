@@ -1,39 +1,45 @@
-import "./LeftMenu.css";
+import "./LeftMenu.scss";
+import icon from "../../assets/Icons/colorfilter.png"
+import image from "../../assets/Icons/Avatar.png"
+import clock from "../../assets/Icons/clock.png"
+import flash from "../../assets/Icons/flash-circle.png"
+import teacher from "../../assets/Icons/teacher.png"
+import login from "../../assets/Icons/login.png"
+import { LogoName } from "./LogoName/LogoName";
+import { AvatarName } from "./AvatarName/AvatarName";
+import { MenuItem } from "./MenuItem/MenuItem"; 
+
+
+
 
 export const LeftMenu = () => {
-  return (
-    <div className="LeftMenu">
-    <div className="Conteiner">
-      <div className="Logo"></div>
-      <div className="TextLogo">Teach.</div>
-      <div className="Avatar"></div>
-      <div className="TextAvatar">Jone Cooper</div>
-      <div className="Line"></div>
-      <div className="DashboardConteiner">
-      <div className="DashboardLogo"></div>
-      <div className="DashboardText">Dashboard</div>
-      </div>
-      <div className="ChatConteiner">
-      <div className="ChatLogo"></div>
-      <div className="ChatText">Chat</div>
-      </div>
-      <div className="MyCourseConteiner">
-      <div className="MyCourseLogo"></div>
-      <div className="MyCourseText">My Course</div></div>
-      <div className="MyAccountConteiner">
-          <div className="MyAccountLogo"></div>
-          <div className="MyAccountText">My Account</div>
-      </div>
-      <div className="LogoutConteiner">
-          <div className="LogoutLogo"></div>
-          <div className="LogoutText" onClick={press}>Log out</div>
-      </div>
 
-    </div>
-  </div>
-   
-  );
+  let activeBar = null;
+  return (
+     <div className="LeftMenu"> 
+         <LogoName icon={icon}>Teach.</LogoName>
+         <AvatarName image={image}>Jone Cooper</AvatarName>
+         <div className="Line"></div>
+         <div className="MenuConteiner">
+          <MenuItem onClick={active} image={flash}>Dashboard</MenuItem>
+          <MenuItem onClick={active} image={clock}>My Schedule</MenuItem>
+          <MenuItem onClick={active} image={teacher}>My Course</MenuItem>
+          <MenuItem onClick={active} image={flash}>My Account</MenuItem>
+       </div>
+       <div className="ExitMenu">
+          <MenuItem onClick={press} image={login}>My Account</MenuItem>
+        </div>
+      </div>
+    );
+    
+  
   function press() {
-    console.log("press")
+    console.log("пользователь разлогинен");
+    activeBar && activeBar.classList.remove('active');
+  }
+  function active(e) {
+    activeBar ? activeBar.classList.remove('active'): activeBar = e.target;
+    e.target.classList.add('active');
+    activeBar = e.target;
   }
 };

@@ -6,18 +6,27 @@
 	font-family:'Gilroy-Medium'; 
 	src: url(../../assets/fonts/Gilroy-Medium.ttf); 
 }
+
 *{
     font-size: 16px;
     line-height: 19px; 
 }
-.Conteiner::-webkit-scrollbar {
+
+.LeftMenu::-webkit-scrollbar {
     width: 0;
     height: 0;
 }
-.Conteiner{
+
+body {
+    margin: 0; 
+   }
+
+.LeftMenu{
+    display: flex;
+    flex-direction: column;
 position: absolute;
 width: 260px;
-height: 975px;
+height: 100vh;
 left: 500px;
 top: 100px;
 background: #FFFFFF;
@@ -26,45 +35,18 @@ border: 1px solid black;
 overflow: auto;
 -ms-overflow-style: none;
 scrollbar-width: none;
+}
+.MenuConteiner{
+    width: 260px;
+    height: 566px;
+    position: absolute;
+    top: 218px;
+}
+.ExitMenu{
+    position: absolute;
+    top: 802px;
+}
 
-}
-.Logo{
-background: url(../../assets/Icons/colorfilter.png) no-repeat;
-position: absolute;
-width: 28px;
-height: 28px;
-left: 30px;
-top: 35px;
-}
-.TextLogo{
-position: absolute;
-width: 52px;
-height: 21px;
-left: 68px;
-top: 42px;
-font-family: 'Gilroy-SemiBold';
-font-size: 17px;
-line-height: 20px;
-color: #000000;
-}
-.Avatar{
-background: url(../../assets/Icons/Avatar.png) no-repeat;
-position: absolute;
-width: 34px;
-height: 34px;
-left: 30px;
-top: 113px;
-border-radius: 201.875px;
-}
-.TextAvatar{
-position: absolute;
-width: 98px;
-height: 20px;
-left: 74px;
-top: 113px;
-font-family: 'Gilroy-SemiBold';
-color: #000000;
-}
 .Line{
 position: absolute;
 width: 200px;
@@ -75,6 +57,8 @@ border-bottom: 1px solid #DFE5F1;
 height: 1px;
 width: 200px;
 }
+
+
 .DashboardConteiner{
 position: absolute;
 width: 125px;
@@ -100,14 +84,14 @@ top: 0px;
     color: #141736;
     cursor: pointer;   
 }
-.ChatConteiner{
+.MyScheduleConteiner{
 position: absolute;
 width: 125px;
 height: 24px;
 left: 30px;
 top: 269px;
 }
-.ChatLogo{
+.MyScheduleLogo{
 background: url(../../assets/Icons/message-text.png);
  position: absolute;
 width: 24px;
@@ -115,9 +99,9 @@ height: 24px;
 left: 0px;
 top: 0px;
 }
-.ChatText{
+.MyScheduleText{
     position: absolute;
-    width: 38px;
+    width: 94px;
     height: 19px;
     left: 40px;
     top: 3px;
@@ -204,3 +188,4 @@ color: #141736;
 background:none;
 cursor: pointer;
 }
+
