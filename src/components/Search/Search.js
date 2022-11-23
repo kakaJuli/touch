@@ -1,36 +1,42 @@
-import "./Search.css";
-import img from "./image/search.png"
-//import * as Font from 'Google-font';
+import "./Search.scss";
+import { SearchButton } from "./SearchButton";
+import { SearchIcon } from "./SearchIcon/SearchIcon";
+import { SearchInput } from "./SearchInput";
+/*import img from "./image/search.png"*/
 
 
-/*const fonts = () => Font.loadAsync({
-  'gilroy': require('./assets/Quicksand-Medium.ttf')
-})*/
-const inputClick = () => console.log("Нажатие на инпут");
-const mouseOver = () => console.log("Мышь ушла");
-const change = (e) => console.log (e.target.value)
-const btn = () => console.log ("нажата кнопка");
-
-const search = "search"
 
 export function Search() {
+
+  const handleClick = () => {
+    console.log('нажата кнопка');
+  }
+
+  const inputClick = () => {
+    console.log('нажатие на инпут');
+  }
+
+  const mouseOver = () => {
+    console.log ('мышь ушла');
+  }
+
+  const change = (e) => {
+    console.log (e.target.value);
+  }
+
+  const search = 'search';
+
   return (
-  
-  <div className="search">
-
-    
-      <img className="imag" src={img}/>
-    
-
-    <input className="input" placeholder={search} onClick = {inputClick} onMouseEnter = {mouseOver}  onChange = {change}/>
-    <button className="btn" onClick={btn} >+ New Upload</button>
-  </div>
-  
+    <div className="Search">
+      <SearchIcon />
+      <SearchInput placeholder={search} onClick = {inputClick} onMouseEnter = {mouseOver} onChange = {change}/>
+      <SearchButton onClick = {handleClick}>
+        + New Upload
+      </SearchButton>
+    </div>
   )
-};
-
-
-
+}
+ 
 
 
 
