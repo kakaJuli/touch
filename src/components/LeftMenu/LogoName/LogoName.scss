@@ -1,0 +1,25 @@
+
+   .LogoName{
+
+        
+        &-Icon{
+             position: absolute;
+             width: 28px;
+             height: 28px;
+             left: 30px;
+             top: 35px;
+
+        }
+        &-Text{
+            position: absolute;
+            height: 21px;
+            left: 68px;
+            top: 42px;
+            font-family: 'Gilroy-SemiBold';
+            font-size: 17px;
+            line-height: 20px;
+            color: #000000;
+
+        }
+
+    }
