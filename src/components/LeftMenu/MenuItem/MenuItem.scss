@@ -1,0 +1,40 @@
+.MenuItem{
+    display: flex;
+    flex-direction: row;
+    justify-content:flex-start;
+    align-items: center ;
+    height: 24px;
+    margin-bottom: 35px;
+    border: none;
+    background: none;
+
+
+
+
+    &-Image{
+        margin-left: 32px;
+        width: 24px;
+        height: 24px;        
+    }
+
+    &-Text{
+        margin-left: 18px;
+        font-family: 'Gilroy-Medium';
+        color: #141736; 
+        cursor: pointer;
+    }
+}
+.active{
+    color: #0177FB;
+    
+
+   
+
+}
+.Bar{
+    width: 4px;
+    height: 40px;
+}
+.activeBar{
+    background: #0177FB;
+}
